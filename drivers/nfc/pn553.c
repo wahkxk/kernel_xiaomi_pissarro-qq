@@ -168,7 +168,7 @@ static void print_send_buffer(struct pn544_dev *nqx_dev, unsigned char *buf, int
         len = MAX_I2C_DUMP_SIZE - 1;
 
     for (i = 0; i < len; i++) {
-        snprintf(output + i * 2, 3, "%02x ", buf[i]);
+        snprintf(output + i * 2, 4, "%02x ", buf[i]);
     }
     dev_warn(&nqx_dev->client->dev, "%3d > %s\n", len, output);
 }
@@ -182,7 +182,7 @@ static void print_recv_buffer(struct pn544_dev *nqx_dev, unsigned char *buf, int
         len = MAX_I2C_DUMP_SIZE - 1;
 
     for (i = 0; i < len; i++) {
-        snprintf(output + i * 2, 3, "%02x ", buf[i]);
+        snprintf(output + i * 2, 4, "%02x ", buf[i]);
     }
     dev_warn(&nqx_dev->client->dev, "%3d < %s\n", len, output);
 }
