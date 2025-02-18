@@ -1,5 +1,3 @@
-data/user/0/com.termux/files/home/Termux-Linux/Ubuntu/ubuntu-fs/root/pis1
-/data/user/0/com.termux/files/home/Termux-Linux/Ubuntu/ubuntu-fs/root/pis
 
 新增的文件：
 ==============================
@@ -8,17 +6,19 @@ KernelSU-Next/
 
 drivers/kernelsu/
 
-fs/Makefile.orig
+fs/proc/task_mmu.c.orig
 fs/devpts/inode.c.orig
+
+fs/Makefile.orig
 fs/exec.c.orig
 fs/inode.c.orig
 fs/namei.c.orig
 fs/namespace.c.orig
 fs/open.c.orig
-fs/proc/task_mmu.c.orig
 fs/stat.c.orig
 fs/sus_su.c
 fs/susfs.c
+
 include/linux/sched.h.orig
 include/linux/sus_su.h
 include/linux/susfs.h
